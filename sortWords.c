@@ -43,7 +43,7 @@ int main(void){
         printf("Current working directory: %s\n", buf);
         free(buf);					// frees the buffer when finished
     }
-    printf("\nPlease enter a word:\n");
+    printf("\nPlease enter a word: ");
 	while ((len = getaline(word, WORD_LEN)) > 1){	//receives an input word by using getaline()
 		if (strcmp (word, "\n") == 0){
 			break;					//breaks the while loop when a user presses return or enter
@@ -62,11 +62,12 @@ int main(void){
 				printf("Oops, the memory allocation malloc failed.\n");
 				exit(0);
 			}
+			printf("Enter another word:  ");
 			strcpy(words[num_words], word);	//copy the input word into the pointer array words[]
 		}
 		num_words++;					//increment num_words to keep track of how many words are entered
 	}
-	printf("Your words: ");
+	printf("\nYour words: ");
 	for(int j = 0; j < num_words; j++){		//loop to print out the input words in order of input
 		printf("%s ", words[j]);
 	}
