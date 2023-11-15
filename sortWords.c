@@ -78,6 +78,7 @@ int main(void){
     for (int i = 0; i < num_words; i++) {	//loop to display new sorted list
         printf(" %s",  words[i]);
     }
+	free(*words);
     printf("\n");
     printf("\nExiting word sorting application\n");
 	for(int i = 0; i < num_words; i++){		//free up the space allocated by malloc
