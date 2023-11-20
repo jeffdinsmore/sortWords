@@ -24,7 +24,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
-#include "sortWordsHeader.h"
+#include "C:\Users\Owner\Documents\ECE 361\Code\SortWords/sortWordsHeader.h"
 
 /***** main() *****/
 int main(void){
